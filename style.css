@@ -19,8 +19,8 @@ border-radius: 0.5rem;
 cursor: pointer;
 }
 .add-btn {
-background: white;
-color: black;
+background-color: #27272a;
+color: white;
 }
 .modal {
 position: fixed;
@@ -32,10 +32,28 @@ justify-content: center;
 z-index: 999;
 }
 .modal-content {
-background: #27272a;
+background-color: #080808;
 padding: 1.5rem;
 border-radius: 0.75rem;
 width: 20rem;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+#task-name{
+    background-color: #161616;
+    border: none;
+    padding: 12px;
+    border-radius: 0.75rem;
+    color: rgba(255,255,255,0.5);
+}
+#task-start,
+#task-end{
+    background-color: #161616;
+    border: none;
+    padding: 12px;
+    border-radius: 0.75rem; 
+    color: rgba(255,255,255,0.5);
 }
 .timeline {
 position: relative;
