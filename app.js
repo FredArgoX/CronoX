@@ -1,4 +1,4 @@
-const futuristicColors = ["#00FFFF", "#7DF9FF", "#8A2BE2", "#FF00FF", "#00FFAB", "#FF1493", "#9C27B0", "#03DAC6", "#18FFFF", "#00E5FF", "#B388FF"];
+const futuristicColors = ["#00f18b", "#7DF9FF", "#8A2BE2", "#FF00FF", "#00FFAB", "#FF1493", "#9C27B0", "#03DAC6", "#18FFFF", "#00E5FF", "#B388FF"];
 const hours = Array.from({ length: 17 }, (_, i) => i + 6);
 let visibleHours = [...hours];
 let tasks = [];
@@ -50,10 +50,10 @@ function renderCards() {
       </div>
       <div>Status: ${task.status}</div>
       <div class="task-controls">
-        <button onclick="editTask(${idx})" style="background:white;color:black">Edit</button>
-        <button onclick="updateStatus(${idx}, 'Done')" style="background:#86efac;color:black">Done</button>
-        <button onclick="updateStatus(${idx}, 'Not Done')" style="background:#fde68a;color:black">Not Done</button>
-        <button onclick="deleteTask(${idx})" style="background:#f87171;color:black">Delete</button>
+        <button onclick="editTask(${idx})" style="background:black;color:white">Edit</button>
+        <button onclick="updateStatus(${idx}, 'Done')" style="background:black;color:white">Done</button>
+        <button onclick="updateStatus(${idx}, 'Not Done')" style="background:black;color:white">Not Done</button>
+        <button onclick="deleteTask(${idx})" style="background:black;color:white">Delete</button>
       </div>
     `;
     container.appendChild(card);
